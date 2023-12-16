@@ -12,3 +12,9 @@ func DevValidate() *cobra.Command {
 func perCookbook(path string, _ types.Cookbook) {
 	fmt.Fprintln(Out, path, "is a valid cookbook")
 }
+type Gadget struct {
+	name            string
+	json            string
+	parametersCount int
+}
+
